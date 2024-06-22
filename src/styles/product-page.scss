@@ -1,0 +1,149 @@
+* {
+
+  box-sizing: border-box;
+  font-family: Yantramanav, sans-serif;
+}
+.product-card {
+  &__image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  &__tags {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+
+    &__tag {
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+
+    &__badge {
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+
+      &--hot {
+        background-color: #ff5722;
+        color: #fff;
+      }
+
+      &--new {
+        background-color: #4caf50;
+        color: #fff;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+
+    &__downloads {
+      font-size: 14px;
+      color: #b0b0b0;
+    }
+
+    &__save-btn {
+      background: none;
+      border: none;
+      font-size: 18px;
+      color: #ffeb3b;
+      cursor: pointer;
+    }
+  }
+  &__name {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+  }
+}
+
+.recommend-container {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .recommend-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2450px;
+
+    h2 {
+      color: #fff;
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .see-all {
+      font-size: 20px;
+      color: #FFF;
+      text-decoration: none;
+    }
+  }
+
+  .recommend-content {
+    display: flex;
+    gap: 20px;
+  }
+  .recommend-container {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+}
+// General styles
+body {
+  font-family: 'Yantramanav', sans-serif;
+  background-color: #01081e;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Styles for the product page
+.recommend-container {
+  padding: 20px;
+
+  .recommend-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .see-all {
+      font-size: 14px;
+      color: #00b4d8;
+    }
+  }
+
+  .recommend-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
